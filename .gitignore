@@ -1,0 +1,23 @@
+
+# Environment variables and API keys
+.env
+.env.*
+!.env.example
+application-local.properties
+
+# Java / Spring Boot
+backend/target/
+*.class
+
+# Angular / Node
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# macOS
+.DS_Store

@@ -1,0 +1,45 @@
+<div class="chat-container">
+
+  <header class="chat-header">
+    <h1>AI Cybersecurity Assistant</h1>
+    <p>Assistant intelligent dédié à la cybersécurité</p>
+  </header>
+
+  <main class="chat-messages">
+
+    @for (msg of messages; track $index) {
+      <div
+        class="message"
+        [class.user]="msg.sender === 'user'"
+        [class.assistant]="msg.sender === 'assistant'"
+      >
+        {{ msg.text }}
+      </div>
+    }
+
+   @if (isLoading) {
+  <div class="typing-indicator">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+}
+
+  </main>
+
+  <div class="chat-input">
+
+    <input
+      type="text"
+      placeholder="Posez votre question..."
+      [(ngModel)]="userMessage"
+      (keyup.enter)="sendMessage()"
+    />
+
+    <button (click)="sendMessage()">
+      Envoyer
+    </button>
+
+  </div>
+
+</div>
