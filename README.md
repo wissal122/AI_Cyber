@@ -1,4 +1,4 @@
-# AI Cybersecurity Assistant 🤖
+# AI Cybersecurity Assistant 🤖🔐
 
 An AI-powered cybersecurity assistant that allows users to interact with an intelligent chatbot to ask cybersecurity-related questions and receive AI-generated responses.
 
